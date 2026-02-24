@@ -1,0 +1,217 @@
+/* ===== GLOBAL RESET & BASE ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background-color: #e67e22;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+/* ===== SECTION CARD ===== */
+.section {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+  color: #e67e22;
+}
+
+/* ===== FORM ===== */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ===== INPUTS ===== */
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #e67e22;
+}
+
+/* ===== INPUT GROUP (ingredient row) ===== */
+.input-group {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.input-group .input {
+  flex: 1;
+  min-width: 120px;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  padding: 10px 18px;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #cf6d17;
+}
+
+.btn-primary {
+  margin-top: 8px;
+  font-size: 1rem;
+  padding: 12px;
+}
+
+.remove-btn {
+  padding: 4px 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+/* ===== INGREDIENTS SECTION ===== */
+.ingredients h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.list {
+  margin-bottom: 4px;
+}
+
+/* Single ingredient row */
+.ingredient-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  background: #fdf4ec;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+/* ===== EMPTY STATE ===== */
+.empty-message {
+  color: #999;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* ===== MESSAGES ===== */
+.msg {
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.msg.error {
+  background-color: #fdecea;
+  color: #c0392b;
+}
+
+.msg.success {
+  background-color: #eafaf1;
+  color: #27ae60;
+}
+
+/* ===== RECIPE CARDS ===== */
+.author-group {
+  margin-bottom: 24px;
+}
+
+.author-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e67e22;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #f0e0cc;
+  margin-bottom: 12px;
+}
+
+.recipe-card {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 14px;
+  margin-bottom: 12px;
+  background: #fafafa;
+}
+
+.recipe-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.recipe-description {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.recipe-ingredients h4 {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+.recipe-ingredients ul {
+  list-style: disc;
+  padding-left: 18px;
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 10px;
+}

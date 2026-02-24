@@ -1,0 +1,4 @@
+/* minimal reset for the root element */
+#root {
+  min-height: 100vh;
+}
